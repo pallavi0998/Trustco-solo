@@ -1,0 +1,104 @@
+/* Apply border-box sizing globally for easier layout management */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global font styles */
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --spacing-unit: 8px;
+}
+
+/* Apply global font settings */
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--spacing-unit);
+}
+
+/* Typography settings for headings and paragraphs */
+h1 {
+    font-size: 2rem;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+h5 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+h6 {
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+/* Default link styling */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Apply consistent padding and margin to sections */
+section {
+    padding: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+/* Button styling */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+}
